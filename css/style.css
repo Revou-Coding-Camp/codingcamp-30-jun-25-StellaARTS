@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #f0f0f0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.banner img,
+.profile-banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.headquarters .locations {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.city {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.about, .vision-mission {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.vision-mission ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.message form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.message input,
+.message textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.message button {
+  padding: 10px;
+  background: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eaeaea;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f8f8f8;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .headquarters .locations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about, .vision-mission {
+    padding: 0 10px;
+  }
+}
